@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EcuadorLOPDPArcosRequest",
+  "description": "Esquema estandarizado de recepción de solicitudes ARCO en cumplimiento con la LOPDP de Ecuador. Diseño por Damian Fabricio Macancela Caguana (UTPL / ITSA).",
+  "type": "object",
+  "properties": {
+    "solicitante": {
+      "type": "object",
+      "properties": {
+        "nombres_completos": { "type": "string", "example": "Ciudadano Ecuatoriano" },
+        "cedula_o_ruc": { "type": "string", "pattern": "^[0-9]{10,13}$" },
+        "correo_electronico": { "type": "string", "format": "email" },
+        "provincia_residencia": { "type": "string", "default": "Azuay" }
+      },
+      "required": ["nombres_completos", "cedula_o_ruc", "correo_electronico"]
+    },
+    "tipo_derecho_ejercido": {
+      "type": "string",
+      "enum": [
+        "ACCESO - Solicito confirmación y copia de mis datos personales en su base de datos",
+        "RECTIFICACIÓN - Solicito corrección de inexactitudes en mis datos crediticios o personales",
+        "CANCELACIÓN (OLVIDO) - Solicito supresión absoluta tras término de relación contractual",
+        "OPOSICIÓN - Prohibo el tratamiento con fines de telemercadeo, cesión a terceros o venta a aseguradoras no autorizadas"
+      ]
+    },
+    "fundamentacion_legal": {
+      "type": "string",
+      "default": "Al amparo de la Constitución de la República del Ecuador y la LOPDP (Arts. 13 al 19), exijo respuesta y resolución por escrito dentro del término legal improrrogable."
+    }
+  },
+  "required": ["solicitante", "tipo_derecho_ejercido", "fundamentacion_legal"]
+}
