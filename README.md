@@ -1,7 +1,7 @@
 # ⚖️ LOPDP Compliance Toolkit Ecuador — Guías ARCO, Plantillas DPIA y Auditoría Técnica
 **Kit de herramientas jurídico-técnicas para la aplicación real de la Ley Orgánica de Protección de Datos Personales en Ecuador**
 
-* **Autor Titular y Consultor Legal-Tech:** Damian Fabricio Macancela Caguana (Abogado Digital UTPL | Especialista Ciberseguridad ITSA | Jefe de Sistemas en Cooperativa del Azuay)
+* **Autor Titular y Consultor Legal-Tech:** Damian Fabricio Macancela Caguana (Estudiante de Derecho UTPL | Estudiante de Ciberseguridad ITSA | Prácticas Técnicas en Sector Cooperativo)
 * **Hub de Recursos en Línea:** [https://damianmacancela.github.io/recursos-lopdp.html](https://damianmacancela.github.io/recursos-lopdp.html)
 * **Libros Oficiales del Autor:** [El Código de la Resiliencia](https://damianmacancela.github.io/libro-codigo-resiliencia.html) | [Manual de Defensa Digital](https://damianmacancela.github.io/manual-defensa-ciudadano-ecuatoriano.html)
 
